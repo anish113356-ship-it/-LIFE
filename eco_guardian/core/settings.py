@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL', 'postgresql://postgres:14427320H@localhost:5432/eco_guardian'),
+        default=os.environ.get('DATABASE_URL', 'postgresql://postgres:postgres@localhost:5432/eco_guardian'),
         conn_max_age=600
     )
 }
